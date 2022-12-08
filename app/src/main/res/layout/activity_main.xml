@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent layout as linear layout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/sscrn">
+
+    <!-- to perform the calculation-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:text="DAYS CALCULATOR" />
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <!-- to select date 1-->
+        <Button
+            android:id="@+id/bt_first"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:text="01/01/2022"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="TO"
+            android:textColor="@color/teal_200"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <!-- to select date 2-->
+        <Button
+            android:id="@+id/bt_today"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="DD/MM/YYYY"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- button to calculate-->
+    <Button
+        android:id="@+id/btn_calculate"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:background="@drawable/shape"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:text="calculate"/>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="You have to wait : "
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- To show the final output-->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0 Years + 0 Months + 0 Days"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/dbtn"
+        android:layout_width="68dp"
+        android:layout_height="64dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/round"
+        android:text="?" />
+
+</LinearLayout>
